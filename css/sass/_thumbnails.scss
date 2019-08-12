@@ -1,0 +1,29 @@
+#thumbnails {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  .thumbnail {
+    width: 98%;
+    height: 300px;
+    padding: .5%;
+
+    @media (min-width: 768px) {
+      width: 50%;
+      padding: 2%;
+    }
+
+    @media (min-width: 1024px) {
+      width: 24.9%;
+      padding: .5%;
+    }
+    img {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+    }
+    img:hover {
+      box-shadow: 10px 10px 15px rgba(0, 140, 186, 0.5);
+      transform: scale(1.02);
+    }
+  }
+}

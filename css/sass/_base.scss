@@ -1,0 +1,10 @@
+body {
+  margin: 0;
+  padding: 1em;
+  text-align: center;
+  font-family: 'Lato', sans-serif;
+  ::selection {
+    background: $slack-brand-2;
+    color: white;
+  }
+}

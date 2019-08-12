@@ -1,0 +1,16 @@
+h1 {
+  font-size: rem-calc(48);
+  font-weight: normal;
+  margin-left: .5%;
+  margin-top: 40px;
+  text-align: center;
+  font-family: sans-serif;
+
+  @media (min-width: 768px) {
+    margin-left: 2%;
+  }
+
+  @media (min-width: 1024px) {
+    margin-left: .5%;
+  }
+}

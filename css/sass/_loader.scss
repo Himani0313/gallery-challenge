@@ -1,0 +1,28 @@
+@-webkit-keyframes donut-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes donut-spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.loader {
+  display: inline-block;
+  border: .5em solid black;
+  border-left-color: $slack-brand-1;
+  border-radius: 50%;
+  width: 1em;
+  height: 1em;
+  -webkit-animation: donut-spin 2s linear infinite;
+  animation: donut-spin 2s linear infinite;
+}

@@ -1,0 +1,60 @@
+#lightbox {
+  background: rgba(0, 0, 0, 0.75);
+  height: 100%;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  &.hide {
+    visibility: hidden;
+  }
+  img {
+    display: block;
+    left: 50%;
+    overflow: hidden;
+    position: fixed;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 75%;
+  }
+  p {
+    color: white;
+    padding: 1em;
+    position: fixed;
+    background: $slack-brand-4;
+    margin: 0;
+    bottom: 0;
+  }
+  #previous,
+  #next,
+  #close {
+    background-color: $slack-brand-3;
+    color: #ffffff;
+    cursor: pointer;
+    padding: 1em;
+    position: fixed;
+    top: 50%;
+    width: auto;
+    &:hover {
+      transform: scale(1.25);
+    }
+  }
+  #previous {
+    left: 0;
+    border-top-right-radius: .5em;
+    border-bottom-right-radius: .5em;
+  }
+  #next {
+    right: 0;
+    border-top-left-radius: .5em;
+    border-bottom-left-radius: .5em;
+  }
+  #close {
+    background-color: transparent;
+    font-size: 2em;
+    padding: 0;
+    right: 1em;
+    top: .5em;
+  }
+}
